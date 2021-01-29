@@ -45,9 +45,13 @@ const Weather: FC<WeatherProps> = ({ data }) => {
                 </div>
                 <div className="level-item has-text-centered">
                     <div>
+                        <p className="heading">wind</p>
+                        <p className="title">{data.wind.speed}</p>
                     </div>
                 </div>
             </div>
         </section>
     );
 }
+
+export default Weather;
